@@ -1,4 +1,4 @@
-package genericUtility.Practice;
+package genericUtility.FilesUtility;
 
 import org.openqa.selenium.WebDriver;
 
