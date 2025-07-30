@@ -12,9 +12,8 @@ public class CheckAnagramsOfString {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Your First String Here : ");
 		String first = sc.next();
-		Scanner s = new Scanner(System.in);
 		System.out.println("Enter Your Second String Here : ");
-		String second = s.next();
+		String second = sc.next();
 		
 		if(first.length() == second.length()) {
 			

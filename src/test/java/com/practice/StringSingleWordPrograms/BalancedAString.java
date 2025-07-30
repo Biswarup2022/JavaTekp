@@ -11,7 +11,7 @@ public class BalancedAString {
 		System.out.println("Enter Your String Here : ");
 		String s = sc.next();
 		
-		ArrayList<Character> list = new ArrayList();
+		ArrayList<Character> list = new ArrayList<Character>();
 		for(int i=0; i<s.length(); i++) {
 			if((list.size()>0)
 						&& ((s.charAt(i) ==')' && list.get(list.size()-1) =='(')

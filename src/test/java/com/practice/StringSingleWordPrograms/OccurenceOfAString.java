@@ -20,10 +20,13 @@ public class OccurenceOfAString {
 				count++;
 			}
 		}
-		System.out.println("Your Alphabet : "+ch+" Is Repeating ==> "+count);
 		
 		if(count>1) {
-			System.out.println(ch);
+			
+			System.out.println("Your Alphabet : "+ch+" Is Repeating ==> "+count);
 		}
+		else
+			System.out.println("Your Alphabet : "+ch+" Is NOT Repeating");
+			
 	}
 }

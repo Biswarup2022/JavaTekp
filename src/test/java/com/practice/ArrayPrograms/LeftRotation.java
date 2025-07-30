@@ -19,8 +19,10 @@ public class LeftRotation {
 		}
 		System.out.println(a+" : It Is The Length You Want");
 		System.out.println("Your Created ARRAY is : "+Arrays.toString(b));
+		System.out.println("Enter the Number of Rotation : ");
+		int n = sc.nextInt();
 		
-		for(int i=0; i<1; i++) {
+		for(int i=0; i<n; i++) {
 			int temp = b[0];
 			for(int j=0; j<b.length-1; j++) {
 				b[j] = b[j+1];

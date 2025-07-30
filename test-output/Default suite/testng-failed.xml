@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="restAssured.miscleaneous.JsonSchemaValidation">
+      <class name="com.ecom.Flipkart.Test.Amazon4PagesTest">
         <methods>
-          <include name="postPorjectToServer"/>
+          <include name="configAM"/>
+          <include name="amazon4ProductPageTest"/>
+          <include name="configBM"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+          <include name="configBC"/>
+          <include name="configBS"/>
         </methods>
-      </class> <!-- restAssured.miscleaneous.JsonSchemaValidation -->
+      </class> <!-- com.ecom.Flipkart.Test.Amazon4PagesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
