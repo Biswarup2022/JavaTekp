@@ -1,5 +1,7 @@
 package com.practice.StringSingleWordPrograms;
 
+import java.util.Scanner;
+
 import org.testng.annotations.Test;
 
 public class UniqueCharacters {
@@ -7,7 +9,9 @@ public class UniqueCharacters {
 	@Test
 	public void uniqueCharacters() {
 		
-		String s = "java";
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Your String Here to Check : ");
+		String s = sc.nextLine();
 		
 		for(int i = 0; i<s.length()-1; i++) {
 			

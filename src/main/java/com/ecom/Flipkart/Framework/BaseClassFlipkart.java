@@ -4,6 +4,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
@@ -28,13 +29,17 @@ public class BaseClassFlipkart {
 	@BeforeClass(alwaysRun = true)
 	public void configBC() throws Throwable
 	{
+//		ChromeOptions options = new ChromeOptions();
+//		options.addArguments("--incognito");
+		
 		String Browser = pLib.getDataFromPropertiesFile("browser");
 		String URLFlipkart = pLib.getDataFromPropertiesFile("url");
 		String URLAmazon = pLib.getDataFromPropertiesFile("urlAmazon");
+		String URLmakeMyTrip = pLib.getDataFromPropertiesFile("urlMMT");
 		
 		if(Browser.equals("chrome"))
 		{
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(); // options
 		}
 		else if (Browser.equals("firefox"))
 		{
@@ -51,7 +56,9 @@ public class BaseClassFlipkart {
 		
 		sLib.getImplycitlyWaitAndMaximize(driver);
 //		sLib.getURLToFlipkart(driver, URLFlipkart);
-		sLib.getURLToAmazon(driver, URLAmazon);
+//		sLib.getURLToAmazon(driver, URLAmazon);
+		sLib.getURLToAmazon(driver, URLmakeMyTrip);
+		
 		System.out.println("<<<< Browser Launched Successfully >>>>");
 	}
 	
@@ -65,7 +72,7 @@ public class BaseClassFlipkart {
 	public void configAC() {
 		
 		System.out.println("After Class Annotation => Successfully Closed the Browser");
-		driver.quit();
+//		driver.quit();
 	}
 	
 	@AfterMethod

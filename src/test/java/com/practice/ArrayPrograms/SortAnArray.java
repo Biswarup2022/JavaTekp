@@ -1,6 +1,7 @@
 package com.practice.ArrayPrograms;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class SortAnArray {
 
@@ -21,5 +22,9 @@ public class SortAnArray {
 			}
 		}
 		System.out.println(Arrays.toString(arr));
+		
+		int[] a = {1,2,3,4,5};
+		int[] b = {6,7,4,3,2,1,8,9,10};
+		IntStream.concat(Arrays.stream(a), Arrays.stream(b)).sorted().distinct().forEach(System.out::println);
 	}
 }

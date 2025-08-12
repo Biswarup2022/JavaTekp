@@ -27,6 +27,20 @@ public class OccurenceOfAString {
 		}
 		else
 			System.out.println("Your Alphabet : "+ch+" Is NOT Repeating");
-			
+		
+//		String a = "java";
+//		char c = 'a';
+//		int countb = 0;
+//		for(int k = 0; k<a.length(); k++) {
+//			if(a.charAt(k)==c) {
+//				countb++;
+//			}	
+//		}
+//			if(countb>1) {
+//				System.out.println("Your Alphabet : "+c+" Is Repeating ==> "+countb);
+//				
+//			}
+//			else
+//				System.out.println("Your Alphabet : "+c+" Is NOT Repeating");
 	}
 }

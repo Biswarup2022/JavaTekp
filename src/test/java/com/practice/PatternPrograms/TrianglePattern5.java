@@ -18,7 +18,7 @@ public class TrianglePattern5 {
 					System.out.print(j+" ");
 				}
 				else
-					System.out.print("  ");
+					System.out.print(" ");
 			}
 			System.out.println();
 		}

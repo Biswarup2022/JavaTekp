@@ -51,5 +51,9 @@ public class SeleniumUtility {
 		act.scrollToElement(element).perform();
 	}
 	
+	public void waitForElement(WebDriver driver, WebElement element) {
+		Actions act = new Actions(driver);
+		act.pause(2000).perform();
+	}
 	
 }

@@ -15,7 +15,7 @@ public class SumOfString {
 			
 			char ch = str.charAt(i);
 			
-			if((ch>='0' && ch<='9') || (ch>='a' && ch<='z') || (ch>='A' && ch<='Z')){
+			if((ch>='0' && ch<='9') || (ch>='a' && ch<='z') || (ch>='A' && ch<='Z')) {
 //				48 has given to balance the ASCII Value
 				sum = sum+ch-48;
 			}

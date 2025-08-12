@@ -12,15 +12,15 @@ public class Amazon4PagesTest extends BaseClassFlipkart {
 	@Test
 	public void amazon4ProductPageTest() throws Throwable {
 		
-		String mobile = eLib.getDataFromExcel("MobileSheet", 1, 6);
+		String mobile = eLib.getDataFromExcel("MobileSheet", 1, 7);
 		AmazonHomePage homePage = new AmazonHomePage(driver);
 		homePage.searchMobile(mobile);
 		
 		String brand = "Redmi";
-		driver.findElement(By.xpath("(//ul[@id='filter-p_123']/descendant::span[text()='Redmi'])[last()]")).click();
+		driver.findElement(By.xpath("(//ul[@id='filter-p_123']/descendant::span[text()='"+brand+"'])[last()]")).click();
 		
 		AmazonMobilesPage mobilesPage = new AmazonMobilesPage(driver);
-		mobilesPage.getMobilesNameAndPrice();
+		mobilesPage.getMobilesNameAndPrice(driver);
 		
 	}
 }

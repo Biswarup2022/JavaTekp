@@ -35,5 +35,6 @@ public class FindDuplicatePosition {
 				System.out.println(map.getKey()+" ==> "+map.getValue());
 			}
 		}
+		
 	}
 }

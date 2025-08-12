@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ecom.Flipkart.Test.Amazon4PagesTest">
+      <class name="com.ecom.Flipkart.Test.MakeMyTripTest">
         <methods>
           <include name="configAM"/>
-          <include name="amazon4ProductPageTest"/>
           <include name="configBM"/>
           <include name="configAC"/>
           <include name="configAS"/>
           <include name="configBC"/>
           <include name="configBS"/>
+          <include name="makeMyTripTest"/>
         </methods>
-      </class> <!-- com.ecom.Flipkart.Test.Amazon4PagesTest -->
+      </class> <!-- com.ecom.Flipkart.Test.MakeMyTripTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

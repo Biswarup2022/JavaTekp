@@ -25,6 +25,6 @@ public class PanagramsOfString {
 		}
 		else
 			System.out.println(s+" ==> It Is NOT Panagram ");
-			
+		
 	}
 }
